@@ -1,0 +1,19 @@
+---OPT---
+R -> LIRopt
+P -> SEPopt
+D -> ETDopt
+DP -> ETD_SEP_opt
+PR -> SEP_LIR_opt
+DR -> ETD_LIR_opt
+DPR -> ETD_SEP_LIR_opt
+
+---DATASETS---
+ml1m
+lastfm
+
+---TOP K---
+10 (10-12-1)
+# Tests on paper use top-k = 10
+
+python main.py --dataset=ml1m --agent_topk=10-12-1 --opt SEPopt --eval_baseline True
+python main.py --dataset=lastfm --agent_topk=10-12-1 --opt SEPopt --eval_baseline True
