@@ -1,12 +1,15 @@
 import argparse
 import os
-
+import faulthandler
 from metrics import *
 from optimizations import *
 
 from path_data_loader import PathDataLoader
 
 if __name__ == '__main__':
+    faulthandler.enable()
+    import matplotlib 
+    matplotlib.use('Agg')
     boolean = lambda x: (str(x).lower() == 'true')
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, default="lastfm", help='One of {ml1m, lastfm}')
