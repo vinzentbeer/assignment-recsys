@@ -1,4 +1,17 @@
-# Post Processing Explanations in Path Reasoning Recommender Systems with Knowledge Graphs
+
+
+
+
+# Reproduction of Post Processing Explanations in Path Reasoning Recommender Systems with Knowledge Graphs
+
+This is our extension on the original repository, which is licensed under the GPL v2, so our experimentation code is as well. We cannot include the data due to rights and size.
+
+We include a uv pyproject file in order to run the code. Install uv (optionally via pip), then run uv sync. 
+
+
+
+
+# Original Readme
 This repository contains the source code of the SIGIR 2022 paper ["Post Processing Recommender Systems with Knowledge Graphs for Recency, Popularity, and Diversity of Explanations"](https://dl.acm.org/doi/10.1145/3477495.3532041).
 
 ![Pipeline Summary](/SIGIR22-pipeline-summary.png)
